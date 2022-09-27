@@ -16,10 +16,14 @@ public class PlayerStateMachine : StateMachine
     [field: SerializeField]
     public Animator Animator { get; private set; }
 
+    public Transform MainCameraTransform { get; private set; }
+
 
     // Start is called before the first frame update
     private void Start()
     {
+        MainCameraTransform = Camera.main.transform;
+
         SwitchState(new PlayerTestState(this));
     }
 
