@@ -17,6 +17,7 @@ public class PlayerFreeLookState : PlayerBaseState
         Debug.Log("Freelook Enter");
 
         stateMachine.InputReader.JumpEvent += OnJump;
+        stateMachine.InputReader.AttackEvent += OnAttack;
     }
 
     public override void Tick(float deltaTime)
@@ -41,11 +42,17 @@ public class PlayerFreeLookState : PlayerBaseState
     {
         Debug.Log("Exit");
         stateMachine.InputReader.JumpEvent -= OnJump;
+        stateMachine.InputReader.AttackEvent -= OnAttack;
     }
 
     private void OnJump()
     {
         stateMachine.SwitchState(new PlayerJumpingState(stateMachine));
+    }
+
+    private void OnAttack()
+    {
+        stateMachine.SwitchState(new PlayerAttackState(stateMachine));
     }
 
     private Vector3 CalculateMovement()

@@ -1838,7 +1838,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.03
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 0.95, z: 0}
 --- !u!114 &8119247095486464224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4376,7 +4376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421702, guid: 12caa982699ea3b41a15a260d90f16a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.7
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 421702, guid: 12caa982699ea3b41a15a260d90f16a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4384,7 +4384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 421702, guid: 12caa982699ea3b41a15a260d90f16a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.4
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 421702, guid: 12caa982699ea3b41a15a260d90f16a0, type: 3}
       propertyPath: m_LocalRotation.w
