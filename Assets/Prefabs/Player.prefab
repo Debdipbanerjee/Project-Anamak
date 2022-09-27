@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1496032850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496032851}
+  m_Layer: 0
+  m_Name: CameraFocus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496032851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496032850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1617645716392235058}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1617645716391854964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1735,7 @@ GameObject:
   - component: {fileID: 8119247095486464223}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1734,6 +1765,7 @@ Transform:
   - {fileID: 1617645716392170578}
   - {fileID: 1617645716392246610}
   - {fileID: 1617645716392128688}
+  - {fileID: 1496032851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1772,6 +1804,8 @@ MonoBehaviour:
   <InputReader>k__BackingField: {fileID: 7652623900410822136}
   <Controller>k__BackingField: {fileID: 8119247095486464223}
   <FreeLookMovementSpeed>k__BackingField: 6
+  <Animator>k__BackingField: {fileID: 1617645716382666620}
+  <RotationDamping>k__BackingField: 10
 --- !u!114 &7652623900410822136
 MonoBehaviour:
   m_ObjectHideFlags: 0
